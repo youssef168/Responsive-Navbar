@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #18191A;
+}
+
+header {
+    padding: 20px;
+}
+
+.nav-container {
+    background-color: #242526;
+    padding: 12px;
+    border-radius: 7px;
+    border: 2px solid #ccc;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.elements {
+    display: flex;
+    align-items: center;
+}
+
+.elements .element {
+    margin-right: 15px;
+    background: #3A3B3C;
+    padding: 8px 11px;
+    border-radius: 30px;
+    cursor: pointer;
+    position: relative;
+}
+
+.element i {
+    font-size: 19px;
+    transition: .5s;
+}
+
+.element .el-ico span {
+    position: absolute;
+    top: 47px;
+    color: #333;
+    background-color: #ffffff91;
+    left: -1px;
+    padding: 5px;
+    border-radius: 7px;
+    border: 1px solid #ccc;
+    opacity: 0;
+    transition: .5s;
+    visibility: hidden;
+}
+
+.element .el-ico:hover span.el-describe {
+    top: 45px;
+    opacity: 1;
+    visibility: visible;
+}
+
+.notfis {
+    position: absolute;
+    color: #fff;
+    background-color: #242526;
+    min-width: 330px;
+    padding: 16px;
+    border-radius: 9px;
+    left: -95px;
+    top: 65px;
+    opacity: 0;
+    visibility: hidden;
+    transition: .5s;
+}
+
+.notfis.active {
+    top: 52px;
+    opacity: 1;
+    visibility: visible;
+}
+
+.notfis .headers {
+    margin-bottom: 12px;
+}
+
+.headers .title {
+    font-size: 25px;
+    margin-bottom: 14px;
+}
+
+.headers .titles {
+    display: flex;
+    width: 44%;
+    justify-content: space-between;
+    /* margin-bottom: 12px; */
+    align-items: center;
+}
+
+.n-item {
+    cursor: pointer;
+}
+
+.n-active {
+    background-color: #263951;
+    color: #2B7ADF;
+    padding: 8px;
+    border-radius: 7px;
+}
+
+.body .b-item {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+
+.b-item .user-img {
+    background-color: #3A3B3C;
+    padding: 11px 13px;
+    border-radius: 30px;
+    margin-right: 13px;
+}
+
+.b-item .item-body .b-message h5 {
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: normal;
+    letter-spacing: .5px;
+}
+
+.b-message h5 span {
+    font-weight: 600;
+}
+
+
+@media (max-width: 731px) {
+    .notfis {
+        left: -155px;
+    }
+}
+@media (max-width: 731px) {
+    .notfis {
+        left: -197px;
+    }
+
+}
+
+.hero {
+    margin-top: 120px;
+}
+
+.hero h1 {
+    text-align: center;
+    font-size: 3rem;
+    letter-spacing: 1px;
+    background: linear-gradient(-45deg,#e250e5,#4b50e6,#e250e5,#4b50e6);
+    background-size: 100% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-stroke: 4px transparent;
+    -webkit-text-fill-color: #18191A;
+    letter-spacing: 5px;
+}
